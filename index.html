@@ -11,7 +11,169 @@
 </head>
 
 <body>
+    <header class="w-11/12 m-auto">
+        <div class="flex flex-row bg-slate-300 h-20  justify-between px-4 items-center rounded-md">
+            <div class="">
+                <p class="text-2xl font-bold"> Interactive</p>
+                <p class=""> Geometry Genius</p>
+            </div>
+            <div>
+                <button class="btn bg-blue-600 text-white hover:text-black ">Blog</button>
+            </div>
+        </div>
+    </header>
+    <section class="w-11/12 m-auto mt-5 flex lg:flex-row flex-col  gap-3 ">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+            <!-- Triangle  Cards -->
+            <div class="card bg-base-100 shadow-xl ">
+                <figure><img src="/images/triangle.png" alt="Shoes" class="w-4/4 p-5" /></figure>
+                <div class="card-body">
+                    <h2 class="text-center text-2xl font-bold">Triangle</h2>
+                    <p class="text-center font-bold">Area (A) = 0.5 x b x h</p>
+                    <div class="text-center my-3">
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                        </span> <span>CM</span>
 
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                        </span> <span>CM</span>
+                    </div>
+                    <p class="text-2xl">Area: <span></span> </p>
+                    <div class="card-actions justify-end">
+                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Rectangle  Cards -->
+            <div class="card bg-base-100 shadow-xl ">
+                <figure><img src="/images/rectangle.png" alt="Shoes" class="w-4/4 p-5" /></figure>
+                <div class="card-body">
+                    <h2 class="text-center text-2xl font-bold">Rectangle</h2>
+                    <p class="text-center font-bold">Area (A) = w x I</p>
+                    <div class="text-center my-3">
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                        </span> <span>CM</span>
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                        </span> <span>CM</span>
+                    </div>
+                    <p class="text-2xl">Area: <span></span> </p>
+                    <div class="card-actions justify-end">
+                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Parallelogram Cards -->
+            <div class="card bg-base-100 shadow-xl ">
+                <figure><img src="/images/parallelogram.png" alt="Shoes" class="w-4/4 p-5" /></figure>
+                <div class="card-body">
+                    <h2 class="text-center text-2xl font-bold">Parallelogram</h2>
+                    <p class="text-center font-bold">Area (A) = b x h</p>
+                    <p class="text-center font-bold">b=10cm, h=12cm</p>
+                    <div class="text-center my-3">
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                        </span> <span>CM</span>
+
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                        </span> <span>CM</span>
+                    </div>
+                    <p class="text-2xl">Area: <span></span> </p>
+                    <div class="card-actions justify-end">
+                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Rhombus Cards -->
+            <div class="card bg-base-100 shadow-xl ">
+                <figure><img src="/images/rhombus.png" alt="Shoes" class="w-4/4 p-5" /></figure>
+                <div class="card-body">
+                    <h2 class="text-center text-2xl font-bold">Rhombus</h2>
+                    <p class="text-center font-bold">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                    <div class="text-center my-3">
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                        </span> <span>CM</span>
+
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                        </span> <span>CM</span>
+                    </div>
+                    <p class="text-2xl">Area: <span></span> </p>
+                    <div class="card-actions justify-end">
+                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Pentagon Cards -->
+            <div class="card bg-base-100 shadow-xl ">
+                <figure><img src="/images/pentagon.png" alt="Shoes" class="w-4/4 p-5" /></figure>
+                <div class="card-body">
+                    <h2 class="text-center text-2xl font-bold">Pentagon</h2>
+                    <p class="text-center font-bold">Area (A) = 0.5 x p x b</p>
+                    <div class="text-center my-3">
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                        </span> <span>CM</span>
+
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                        </span> <span>CM</span>
+                    </div>
+                    <p class="text-2xl">Area: <span></span> </p>
+                    <div class="card-actions justify-end">
+                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ellipse Cards -->
+            <div class="card bg-base-100 shadow-xl ">
+                <figure><img src="/images/ellipse.png" alt="Shoes" class="w-4/4 p-5" /></figure>
+                <div class="card-body">
+                    <h2 class="text-center text-2xl font-bold">Ellipse</h2>
+                    <p class="text-center font-bold">Area (A) = πab</p>
+                    <div class="text-center my-3">
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                        </span> <span>CM</span>
+
+                        <span>
+                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                        </span> <span>CM</span>
+                    </div>
+                    <p class="text-2xl">Area: <span></span> </p>
+                    <div class="card-actions justify-end">
+                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="card w-[320px]  bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h2 class="text-center text-2xl font-bold">Triangle</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/geomarty.js"></script>
 </body>
 
 </html>
