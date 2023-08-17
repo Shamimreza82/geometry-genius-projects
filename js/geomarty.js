@@ -40,6 +40,7 @@ function triangleCalculate() {
     const hight = inputValue("hight-input");
     const Triangle = 0.5 * base * hight;
     valueDisplay("triangle-display", Triangle);
+
     calculationEntry("Tringial", Triangle);
 }
 
@@ -49,6 +50,7 @@ function rectangleCalculate() {
     const i = inputValue("i-input");
     const rectangle = w * i;
     valueDisplay("rectangle-display", rectangle);
+    calculationEntry("Trectangle", rectangle);
 }
 
 function parallelogramCalculate() {
@@ -56,6 +58,7 @@ function parallelogramCalculate() {
     const hight = inputValue("hight-p-input");
     const parallelogram = base * hight;
     valueDisplay("parallelogram-display", parallelogram);
+    calculationEntry("parallelogram", parallelogram);
 }
 
 
@@ -64,6 +67,7 @@ function RhombusCalculate() {
     const input = inputValue("d-inputValue");
     const Rhombus = 0.5 * d * input;
     valueDisplay("rhombus", Rhombus);
+    calculationEntry("rhombus", Rhombus);
 }
 
 function PentagonCalculate() {
@@ -71,6 +75,7 @@ function PentagonCalculate() {
     const b = inputValue("b-input");
     const Pentagon = 0.5 * p * b;
     valueDisplay("Pentagon", Pentagon);
+    calculationEntry("Pentagon", Pentagon);
 }
 
 function EllipseCalculate() {
@@ -79,6 +84,7 @@ function EllipseCalculate() {
     const Ellipse = 3.14 * a * ab;
     const value = Ellipse.toFixed(2);
     valueDisplay("Ellipse", value);
+    calculationEntry("Ellipse", value);
 }
 
 
