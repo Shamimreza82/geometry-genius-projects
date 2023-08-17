@@ -14,6 +14,23 @@ function valueDisplay(displayId, value) {
     document.getElementById(displayId).innerText = value;
 }
 
+//  display Function ainamic Calculation
+
+
+function calculationEntry(areaya, area) {
+    console.log(areaya + " " + area)
+    const calculationEntry = document.getElementById('calculationEntry');
+    const count = calculationEntry.childElementCount;
+
+    const p = document.createElement('p');
+    p.classList.add("my-4")
+    p.innerHTML = `${count + 1}. ${areaya} ${area} cm <sup>2</sup>
+     <button class = "btn btn-primary"> Click </button>`
+    calculationEntry.appendChild(p);
+}
+
+
+
 
 
 
@@ -23,7 +40,7 @@ function triangleCalculate() {
     const hight = inputValue("hight-input");
     const Triangle = 0.5 * base * hight;
     valueDisplay("triangle-display", Triangle);
-
+    calculationEntry("Tringial", Triangle);
 }
 
 
@@ -63,4 +80,6 @@ function EllipseCalculate() {
     const value = Ellipse.toFixed(2);
     valueDisplay("Ellipse", value);
 }
+
+
 

@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header class="w-11/12 m-auto">
-        <div class="flex flex-row bg-slate-300 h-20  justify-between px-4 items-center rounded-md">
+    <header class="w-11/12 m-auto lg:pt-5 pt-2 ">
+        <div class="flex flex-row bg-slate-300 h-20  justify-between px-4 items-center rounded-md ">
             <div class="">
                 <p class="text-2xl font-bold"> Interactive</p>
                 <p class=""> Geometry Genius</p>
@@ -21,7 +21,7 @@
             </div>
         </div>
     </header>
-    <section class="w-11/12 m-auto mt-5 flex lg:flex-row flex-col  gap-3 ">
+    <section class="w-11/12 m-auto mt-8 flex lg:flex-row flex-col gap-3 flex-1 ">
         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
             <!-- Triangle  Cards -->
             <div class="card bg-base-100 shadow-xl ">
@@ -32,12 +32,12 @@
                     <div class="text-center my-3">
                         <span>
                             <input type="number" name="" id="base-input" placeholder="Base"
-                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
 
                         <span>
                             <input type="number" name="" id="hight-input" placeholder="hight"
-                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
                     <p class="text-2xl">Area: <span id="triangle-display"></span>cm<sup>2</sup> </p>
@@ -56,11 +56,11 @@
                     <div class="text-center my-3">
                         <span>
                             <input type="number" name="" id="w-input" placeholder="Base"
-                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
                         <span>
                             <input type="number" name="" id="i-input" placeholder="hight"
-                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
                     <p class="text-2xl">Area: <span id="rectangle-display"></span>cm<sup>2</sup> </p>
@@ -79,12 +79,12 @@
                     <div class="text-center my-3">
                         <span>
                             <input type="number" name="" id="base-p-input" placeholder="Base"
-                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
 
                         <span>
                             <input type="number" name="" id="hight-p-input" placeholder="hight"
-                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
                     <p class="text-2xl">Area: <span id="parallelogram-display"></span>cm<sup>2</sup> </p>
@@ -104,12 +104,12 @@
                     <div class="text-center my-3">
                         <span>
                             <input type="number" name="" id="d-input" placeholder="Base"
-                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
 
                         <span>
                             <input type="number" name="" id="d-inputValue" placeholder="hight"
-                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
                     <p class="text-2xl">Area: <span id="rhombus"></span>cm<sup>2</sup> </p>
@@ -128,12 +128,12 @@
                     <div class="text-center my-3">
                         <span>
                             <input type="number" name="" id="p-input" placeholder="Base"
-                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
 
                         <span>
                             <input type="number" name="" id="b-input" placeholder="hight"
-                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
                     <p class="text-2xl">Area: <span id="Pentagon"></span>cm<sup>2</sup></p>
@@ -152,12 +152,12 @@
                     <div class="text-center my-3">
                         <span>
                             <input type="number" name="" id="a-input" placeholder="Base"
-                                class="w-20 bg-slate-200 rounded-md pl-1 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
 
                         <span>
                             <input type="number" name="" id="ab-input" placeholder="hight"
-                                class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
+                                class="w-16 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
                     <p class="text-2xl">Area: <span id="Ellipse"></span>cm<sup>2</sup> </p>
@@ -168,12 +168,9 @@
                 </div>
             </div>
         </div>
-        <div class="">
-            <div class="card w-[320px]  bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h2 class="text-center text-2xl font-bold">Triangle</h2>
-                </div>
-            </div>
+        <div class="card-body flex items-center border-2 rounded-md">
+            <h2 class="text-3xl">Triangle</h2>
+            <div id="calculationEntry"></div>
         </div>
     </section>
 
