@@ -7,7 +7,6 @@
     <title>Geomerty Genius</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
 <body>
@@ -32,18 +31,19 @@
                     <p class="text-center font-bold">Area (A) = 0.5 x b x h</p>
                     <div class="text-center my-3">
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                            <input type="number" name="" id="base-input" placeholder="Base"
                                 class="w-20 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
 
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                            <input type="number" name="" id="hight-input" placeholder="hight"
                                 class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
-                    <p class="text-2xl">Area: <span></span> </p>
+                    <p class="text-2xl">Area: <span id="triangle-display"></span>cm<sup>2</sup> </p>
                     <div class="card-actions justify-end">
-                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                        <button onclick="triangleCalculate()"
+                            class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -55,17 +55,18 @@
                     <p class="text-center font-bold">Area (A) = w x I</p>
                     <div class="text-center my-3">
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                            <input type="number" name="" id="w-input" placeholder="Base"
                                 class="w-20 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                            <input type="number" name="" id="i-input" placeholder="hight"
                                 class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
-                    <p class="text-2xl">Area: <span></span> </p>
+                    <p class="text-2xl">Area: <span id="rectangle-display"></span>cm<sup>2</sup> </p>
                     <div class="card-actions justify-end">
-                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                        <button onclick="rectangleCalculate()"
+                            class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -75,21 +76,21 @@
                 <div class="card-body">
                     <h2 class="text-center text-2xl font-bold">Parallelogram</h2>
                     <p class="text-center font-bold">Area (A) = b x h</p>
-                    <p class="text-center font-bold">b=10cm, h=12cm</p>
                     <div class="text-center my-3">
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                            <input type="number" name="" id="base-p-input" placeholder="Base"
                                 class="w-20 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
 
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                            <input type="number" name="" id="hight-p-input" placeholder="hight"
                                 class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
-                    <p class="text-2xl">Area: <span></span> </p>
+                    <p class="text-2xl">Area: <span id="parallelogram-display"></span>cm<sup>2</sup> </p>
                     <div class="card-actions justify-end">
-                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                        <button onclick="parallelogramCalculate()"
+                            class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -98,21 +99,23 @@
                 <figure><img src="/images/rhombus.png" alt="Shoes" class="w-4/4 p-5" /></figure>
                 <div class="card-body">
                     <h2 class="text-center text-2xl font-bold">Rhombus</h2>
-                    <p class="text-center font-bold">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                    <p class="text-center font-bold">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub>
+                        </span>cm<sup>2</sup></p>
                     <div class="text-center my-3">
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                            <input type="number" name="" id="d-input" placeholder="Base"
                                 class="w-20 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
 
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                            <input type="number" name="" id="d-inputValue" placeholder="hight"
                                 class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
-                    <p class="text-2xl">Area: <span></span> </p>
+                    <p class="text-2xl">Area: <span id="rhombus"></span>cm<sup>2</sup> </p>
                     <div class="card-actions justify-end">
-                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                        <button onclick="RhombusCalculate()"
+                            class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -124,18 +127,19 @@
                     <p class="text-center font-bold">Area (A) = 0.5 x p x b</p>
                     <div class="text-center my-3">
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                            <input type="number" name="" id="p-input" placeholder="Base"
                                 class="w-20 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
 
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                            <input type="number" name="" id="b-input" placeholder="hight"
                                 class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
-                    <p class="text-2xl">Area: <span></span> </p>
+                    <p class="text-2xl">Area: <span id="Pentagon"></span>cm<sup>2</sup></p>
                     <div class="card-actions justify-end">
-                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                        <button onclick="PentagonCalculate()"
+                            class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -147,18 +151,19 @@
                     <p class="text-center font-bold">Area (A) = πab</p>
                     <div class="text-center my-3">
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="Base"
+                            <input type="number" name="" id="a-input" placeholder="Base"
                                 class="w-20 bg-slate-200 rounded-md pl-1 py-1">
                         </span> <span>CM</span>
 
                         <span>
-                            <input type="number" name="" id="Triangle-input" placeholder="hight"
+                            <input type="number" name="" id="ab-input" placeholder="hight"
                                 class="w-20 bg-slate-200 rounded-md pl-1 ml-5 py-1">
                         </span> <span>CM</span>
                     </div>
-                    <p class="text-2xl">Area: <span></span> </p>
+                    <p class="text-2xl">Area: <span id="Ellipse"></span>cm<sup>2</sup> </p>
                     <div class="card-actions justify-end">
-                        <button class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
+                        <button onclick="EllipseCalculate()"
+                            class="btn  w-full bg-lime-600 text-white hover:bg-slate-600">Calculate</button>
                     </div>
                 </div>
             </div>
